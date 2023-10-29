@@ -31,7 +31,7 @@ INSERT INTO user_info (website_name, website_URL, f_name, l_name, username, emai
         ('Target', 'https://www.target.com', 'Ben', 'Reily', 'Chasm66', 'Beyondcorp@gmail.com', AES_ENCRYPT('clonesagasucks11', @key_str, @init_vector), 'Black Friday sales are coming up'),
         ('Walmart', 'https://www.walmart.com', 'Cletus', 'Cassadiy', 'Carnage009', 'carnage@gmail.com', AES_ENCRYPT('maximumcarnage###', @key_str, @init_vector), 'Walmart got good sales too'),
         ('Taco Bell', 'https://www.tacobell.com', 'Aaron', 'Davis', 'prowler678', 'prowler@gmail.com', AES_ENCRYPT('moneyBAGheist22', @key_str, @init_vector), 'Good food'),
-        ('Best Buy', 'https://www.bestbuy.com', 'Mac', 'Gargan', 'Electro24' 'electro@outlook.com', AES_ENCRYPT('EnterElectro!!', @key_str, @init_vector), 'Christmas deals will be good'),    
+        ('Best Buy', 'https://www.bestbuy.com', 'Mac', 'Gargan', 'Electro24', 'electro@outlook.com', AES_ENCRYPT('EnterElectro!!', @key_str, @init_vector), 'Christmas deals will be good'),    
         ('Microcenter', 'https://www.microcenter.com', 'Felica', 'Hardy', 'BlackCat88', 'fhardy@gmail.com', AES_ENCRYPT('catburglar23!', @key_str, @init_vector), 'Need a new computer'),
         ('Nike', 'https://www.nike.com', 'Gwen', 'Stacy', 'msstacy', 'spicystacy@gmail.com', AES_ENCRYPT('captainstacy', @key_str, @init_vector), 'I need new jordans');
 
