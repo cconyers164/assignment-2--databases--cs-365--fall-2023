@@ -1,6 +1,7 @@
 DROP DATABASE if EXISTS passwords;
 CREATE DATABASE passwords;
 SET block_encryption_mode = 'aes-256-cbc';
+SET @key_str = UNHEX(SHA2('privatekey', 512));
 SET @init_vector = RANDOM_BYTES(16);
 
 USE passwords; 
