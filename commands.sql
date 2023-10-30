@@ -6,7 +6,7 @@ INSERT INTO user_info (website_name, website_URL, f_name, l_name, username, emai
     VALUES 
         ('Reddit', 'https://www.reddit.com', 'Chris', 'Conyers', 'kmoneychris', 'kmoney@gmail.com',('brokecollegestudent', @key_str, @init_vector), 'This is an example');
 
--- Change the password of an existing entry
+-- Change the password of an existing entry. The name can be from any entry in the database. 
 UPDATE user_info SET pwd = AES_ENCRYPT('pwdisupdated', @key_str, @init_vector) WHERE website_name = 'Ebay';
 
 -- Remove a password from an existing entry. THe url can be from any entry in the database.
