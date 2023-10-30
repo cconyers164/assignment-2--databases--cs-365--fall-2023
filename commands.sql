@@ -1,5 +1,5 @@
 --Display all of the info related to the table
-select * from user_info;
+SELECT * FROM user_info;
 
 --Create a new entry into the database
 INSERT INTO user_info (website_name, website_URL, f_name, l_name, username, email_address, pwd, comment)
@@ -18,3 +18,5 @@ DELETE FROM user_info WHERE website_url = 'https://www.facebook.com';
 -- Change a URL associated with one of the passwords in your 10 entries
 UPDATE user_info SET website_url = 'https://www.gamestop.com/' WHERE website_url = 'https://www.target.com';
 
+--Use this command to get all the password-related data, including the password, associated with URLs that have `https`in two of our 10 entries
+SELECT *, CAST(AES_DECRYPT(pwd, @key_str, @init_vector) AS CHAR) AS decrypted_password FROM user_info WHERE website_url LIKE 'https://%';
